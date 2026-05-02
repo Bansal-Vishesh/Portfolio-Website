@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  transition: 0.3s;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  background: #1e293b;
+}
+
+button {
+  padding: 8px 12px;
+  background: #38bdf8;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Dashboard */
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+/* Sections */
+.projects,
+.skills,
+.devops,
+.contact {
+  padding: 30px;
+}
+
+.project-card {
+  background: #1e293b;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Skills */
+.skill {
+  margin: 10px 0;
+}
+
+.bar {
+  background: #334155;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.bar div {
+  height: 10px;
+  background: #38bdf8;
+  border-radius: 5px;
+}
+
+/* Pipeline */
+.pipeline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pipeline div {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Animations */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover Effects */
+.card,
+.project-card {
+  transition: 0.3s;
+}
+
+.card:hover,
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background: #1e293b;
+  margin: 15% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+
+/* Light Mode */
+.light-mode {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.light-mode header {
+  background: #e2e8f0;
+}
+
+.light-mode .card,
+.light-mode .project-card,
+.light-mode .pipeline div {
+  background: white;
+  color: black;
+}

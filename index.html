@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vishesh Bansal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Vishesh Bansal</h1>
+      <p>Java Developer | Spring Boot | DevOps</p>
+    </header>
+
+    <section class="dashboard">
+      <div class="card">
+        <h3>Projects</h3>
+        <p id="projectsCount">3</p>
+      </div>
+      <div class="card">
+        <h3>Tech Stack</h3>
+        <p>Java, Spring Boot, Docker</p>
+      </div>
+      <div class="card">
+        <h3>Experience</h3>
+        <p>Fresher</p>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>Mini E-Commerce Microservices</h3>
+        <p>Microservices architecture with Product & Order services.</p>
+        <button onclick="showDetails('ecommerce')">View Details</button>
+      </div>
+
+      <div class="project-card">
+        <h3>TaskFlow API</h3>
+        <p>Task management REST API with CRUD operations.</p>
+        <button onclick="showDetails('taskflow')">View Details</button>
+      </div>
+
+      <div class="project-card">
+        <h3>AutoDeploy CI/CD</h3>
+        <p>CI/CD pipeline using Docker & GitHub Actions.</p>
+        <button onclick="showDetails('cicd')">View Details</button>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+
+      <div class="skill">
+        <span>Java</span>
+        <div class="bar"><div style="width: 85%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Spring Boot</span>
+        <div class="bar"><div style="width: 80%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Docker</span>
+        <div class="bar"><div style="width: 70%"></div></div>
+      </div>
+    </section>
+
+    <section class="devops">
+      <h2>CI/CD Pipeline</h2>
+      <div class="pipeline">
+        <div>Code</div>
+        <div>Build</div>
+        <div>Dockerize</div>
+        <div>Deploy</div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email: vishubansal430@gmail.com</p>
+    </section>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span onclick="closeModal()" class="close">&times;</span>
+        <p id="modalText"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
